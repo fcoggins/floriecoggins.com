@@ -1,0 +1,87 @@
+@media screen and (min-width: 480px){
+
+  nav a {
+  font-weight: 800;
+  padding: 15px 10px;
+  }
+
+  /**********************************
+  TWO COLUMN LAYOUT
+  ***********************************/
+  
+  #primary {
+    width: 50%;
+    float: left;      
+  }
+  
+  #secondary {
+    width: 40%;
+    float: right;
+  }
+  
+  /**********************************
+  THREE COLUMN LAYOUT - PAGE: PORTFOLIO
+  ***********************************/
+  
+  #gallery li {
+    width: 28.3333%
+  }
+  
+  #gallery li:nth-child(4n) {
+    clear: left;
+  }
+  
+  /**********************************
+  TWO COLUMN LAYOUT - PAGE: ABOUT
+  ***********************************/
+  
+  .profile-photo {
+    float: left;
+    margin: 0 5% 40px 0;
+  }
+  
+}
+
+@media screen and (min-width: 770px){
+  /**********************************
+  HEADER
+  ***********************************/
+  
+  nav {
+    background: none;
+    float: right;
+    font-size: 1.125em;
+    margin-right: 5%;
+    text-align: right;
+    width: 50%;
+  }
+  
+  #logo {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: 40%;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  h2 {
+    font-size: 0.825em;
+    margin-bottom: 20px;
+  }
+  
+  header {
+    border-bottom: 5px solid #3547bc;
+    margin-bottom: 60px;
+  }    
+}
+
+@media screen and (max-width: 365px) {
+  #gallery li {
+    clear: both;
+    width: 95%;
+    margin: 2.5%;
+  }
+}
