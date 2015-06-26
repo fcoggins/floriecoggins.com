@@ -5,13 +5,16 @@ Navy Blue        #16193b
 Medium Blue      #3547bc
 Sky Blue         #4e7ac7
 Lt. Sky Blue     #7fb2f0
-Lt. Blue         #add5f7
+Lt. Blue         #add5f7 rgb(173, 213, 247)
 
 ***********************************/
 
 /**********************************
 GENERAL
 ***********************************/
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -33,6 +36,54 @@ img {
 
 h3 {
   margin: 0 0 1em 0;
+}
+
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: rgba(173, 213, 247, 0.35);
+  border-radius: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background: rgba(255, 255, 255, 0.66);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 5px 0 0 0;
+  outline: 1px solid rgba(173, 213, 247, 1.0);
+  padding: 10px;
+  width: 95%;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+label {
+  font-weight: bold;
+}
+
+fieldset {
+  padding-bottom: 0;
+  font-weight: bold;
+  border: 2px solid rgba(173, 213, 247, 1.0);
+  border-radius: 5px 5px 0 0;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4e7ac7;
+  text-align: center;
+  font-style: normal;
+  width: 99%;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 0 0 5px 5px;
 }
 
 
@@ -166,6 +217,11 @@ PAGE: CONTACT
   font-size: 0.9em;
 }
 
+.contact-form ul{
+  list-style-type: none;
+  padding: 0 10px 0 10px;
+}
+
 .contact-info a {
   display: block;
   min-height: 20px;
@@ -175,9 +231,9 @@ PAGE: CONTACT
   margin: 0 0 10px;
 }
 
-.contact-info li.phone a {
+/*.contact-info li.phone a {
   background-image: url('../img/phone.png');
-  }
+  }*/
 
 .contact-info li.mail a {
   background-image: url('../img/mail.png');
