@@ -39,7 +39,6 @@ h3 {
 }
 
 form {
-  max-width: 300px;
   margin: 10px auto;
   padding: 10px 20px;
   background: rgba(173, 213, 247, 0.35);
@@ -241,6 +240,10 @@ PAGE: CONTACT
 
 .contact-info li.twitter a {
   background-image: url('../img/twitter.png');
+  }
+
+.contact-info li.location a {
+  background-image: url('../img/location.png');
   }
 
 /**********************************
