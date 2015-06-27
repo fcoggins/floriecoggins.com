@@ -17,7 +17,7 @@ GENERAL
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Jacques Francois', serif;
 }
 
 #wrapper {
@@ -35,6 +35,8 @@ img {
 }
 
 h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.33rem;
   margin: 0 0 1em 0;
 }
 
@@ -104,9 +106,9 @@ header {
 }
 
 h1 {
-  font-family: 'Arapey', serif;
+  font-family: 'Quicksand', sans-serif;
   margin: 15px 0;
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: normal;
   line-height: 0.8em;
 }
@@ -116,6 +118,7 @@ h2 {
   font-weight: normal;
   margin: -5px 0 0;
 }
+
 
 
 
@@ -253,7 +256,7 @@ COLORS
 /* site body */
 body {
   background-color: #fff;
-  color: #999;
+  color: #16193b;
 }
 
 /* blue header */
