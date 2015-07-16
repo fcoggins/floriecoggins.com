@@ -45,6 +45,7 @@ form {
   padding: 10px 20px;
   background: rgba(173, 213, 247, 0.35);
   border-radius: 8px;
+  display: none;
 }
 
 input[type="text"],
