@@ -63,7 +63,7 @@ $app->post('/contact', function() use($app){
         echo $cleanName;
     } else {
         $app->flash('error', 'Name, email and message are required');
-        $app->redirect('/phpsite/contact');    
+        $app->redirect('/contact');    
     }
 
     $transport = Swift_SendmailTransport::newInstance('/usr/sbin/sendmail -bs');
@@ -80,10 +80,10 @@ $app->post('/contact', function() use($app){
 
     if($result > 0){
         $app->flash('success', 'Thank you. Your message has been sent.');
-        $app->redirect('/phpsite/contact');
+        $app->redirect('/contact');
     } else {
         $app->flash('error', 'There was a problem. Email could not be sent.');
-        $app->redirect('/phpsite/contact');
+        $app->redirect('/contact');
     }
 });
 
