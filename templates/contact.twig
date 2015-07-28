@@ -1,0 +1,37 @@
+{% extends 'main.twig' %}
+
+{% block content %}
+      <section id="primary">
+        <h3>Currently seeking employment opportunities.</h3>
+        <p>Get in touch with me to talk about how I can add value to your team, to share an idea or just to say hello.</p>
+        <ul class="contact-info">
+          <li class="location"><a>Atlanta, GA</a></li>
+          <li class="mail"><a href="mailto:florie.coggins@gmail.com">florie.coggins@gmail.com</a></li>
+          <li class="twitter"><a href="http://twitter.com/intent/tweet?screen_name=@willowcrestweb">@willowcrestweb</a></li>
+        </ul>
+      </section>
+      <section id="secondary">
+        
+        <form action="" method="POST" class="contact-form">
+          <h3>CONTACT</h3>
+          <fieldset>
+            <legend>I want to hear from you!</legend>
+            <ul>
+              <li>
+                <label for="name">Your name</label><br>
+                <input name="name" type="text" id="name" name="user_name" placeholder="Full Name">
+              </li>
+              <li>
+                <label for="mail">Your email address</label><br>
+                <input name="email" type="email" id="mail" name="user_email" placeholder="Email Address">
+              </li>
+              <li>
+                <label for="message">Message</label><br>
+                <textarea name="msg" id="message" name="user_message" rows="10" placeholder="Your message..."></textarea>
+              </li>
+          </ul>
+          </fieldset>
+          <button type="submit">SEND</button>
+        </form>
+      </section>
+{% endblock content %} 

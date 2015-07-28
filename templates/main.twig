@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% block head %}
+      <meta charset="utf-8">
+      <title>{% block title %}Florie Coggins | Front End Developer{% endblock title %}</title>
+      <link rel="stylesheet" href="css/normalize.css">
+      <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Jacques+Francois' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="icon" 
+        type="image/png" 
+        href="http://floriecoggins.com/favicon.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% endblock head %}
+  </head>
+  <body>
+
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PT3WZ5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PT3WZ5');</script>
+<!-- End Google Tag Manager -->
+
+  {% if flash[ 'error' ] %}
+  <div id="feedback" class="fail">
+    <div>{{ flash[ 'error' ] }}</div>
+  </div>
+  {% endif %}
+
+  {% if flash[ 'success' ] %}
+  <div id="feedback" class="success">
+    <div>{{ flash[ 'success' ] }}</div>
+  </div>
+  {% endif %}
+
+    <header>
+      <a href={{ baseUrl() }} id="logo">
+        <h1>Florie Coggins</h1>
+        <h2>Full Stack Developer</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a href={{ baseUrl() }} {% if currentUrl() == 'http://www.floriecoggins.com/phpsite/' %} class="selected"{% endif %}>Projects</a></li>
+          <li><a href = {{ siteUrl('/photos') }} {% if currentUrl() == 'http://www.floriecoggins.com/phpsite/photos' %} class="selected"{% endif %}>Photos</a></li>
+          <li><a href = {{ siteUrl('/about') }} {% if currentUrl() == 'http://www.floriecoggins.com/phpsite/about' %} class="selected" {% endif %}>About</a></li>
+          <li><a href = {{ siteUrl('/contact') }} {% if currentUrl() == 'http://www.floriecoggins.com/phpsite/contact' %} class="selected"{% endif %}>Contact</a></li>
+          <li><a href = "http://floriecoggins.pythonanywhere.com/">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+
+      {% block content %}
+      {% endblock content %}
+
+      <footer>
+
+        {% block footer %}
+        <a href="http://twitter.com/willowcrestweb"><img src="img/twitter.png" alt="twitter" class="social-icon"></a>
+        <a href="https://www.linkedin.com/in/fcoggins"><img src="img/linkedin.png" alt="linkedin" class="social-icon"></a>
+        <a href="http://github.com/fcoggins"><img src="img/github.png" alt="github" class="social-icon"></a>
+        <p>&copy; 2015 Florie Coggins.</p>
+        {% endblock footer %}
+      </footer>
+    </div>
+  </body>
+</html>

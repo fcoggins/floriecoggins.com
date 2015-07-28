@@ -6,6 +6,7 @@ Medium Blue      #3547bc
 Sky Blue         #4e7ac7
 Lt. Sky Blue     #7fb2f0
 Lt. Blue         #add5f7 rgb(173, 213, 247)
+Orange           #FF9440
 
 ***********************************/
 
@@ -45,7 +46,6 @@ form {
   padding: 10px 20px;
   background: rgba(173, 213, 247, 0.35);
   border-radius: 8px;
-  display: none;
 }
 
 input[type="text"],
@@ -54,6 +54,7 @@ textarea {
   background: rgba(255, 255, 255, 0.66);
   border: none;
   font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
   height: auto;
   margin: 5px 0 0 0;
   outline: 1px solid rgba(173, 213, 247, 1.0);
@@ -81,6 +82,7 @@ button {
   color: #FFF;
   background-color: #4e7ac7;
   text-align: center;
+  font-family: 'Quicksand', sans-serif;
   font-style: normal;
   width: 99%;
   border: none;
@@ -291,6 +293,155 @@ nav a.selected, nav a:hover {
   color: #16193b;
 }
 
+/**********************************
+FEEDBACK
+***********************************/
+
+#feedback {
+  padding: 0px 50px 0;
+  color: #fff;
+  height: 100px;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  transform: translateY(-100px);
+  font-size: 1.2em;
+  font-family: 'Quicksand';
+}
+
+#feedback div {
+  padding-top: 30px;
+}
+
+#feedback.success {
+  transform: translateY(-100px);
+  background: #4e7ac7;
+  -webkit-animation: feedback-in .5s ease-in-out forwards, feedback-out .5s ease-in-out 4s forwards;
+  -moz-animation:    feedback-in .5s ease-in-out forwards, feedback-out .5s ease-in-out 4s forwards;
+  animation:         feedback-in .5s ease-in-out forwards, feedback-out .5s ease-in-out 4s forwards;
+}
+
+#feedback.fail {
+  transform: translateY(-100px);
+  background: #ff0c73;
+  -webkit-animation: feedback-in .5s ease-in-out forwards;
+  -moz-animation:    feedback-in .5s ease-in-out forwards;
+  animation:         feedback-in .5s ease-in-out forwards;
+}
+
+#feedback.dismissed {
+  transform: translateY(0);
+  -webkit-animation: feedback-out .5s ease-in-out forwards;
+  -moz-animation:    feedback-out .5s ease-in-out forwards;
+  animation:         feedback-out .5s ease-in-out forwards;
+}
+
+#feedback h3 {
+  margin: 18px 0 3px;
+}
+
+#feedback p {
+  margin: 0;
+  font-size: 14px;
+  opacity: .7;
+}
+
+.dismiss {
+  float: right;
+  padding: 30px 0;
+  opacity: .7;
+  cursor: pointer;
+}
+
+.dismiss:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+/*
+ANIMATION
+*/
+
+@-webkit-keyframes feedback-in {
+  0%   {
+    transform: translateY(-100px);
+  }
+  80% {
+    transform: translateY(0px);
+    padding-top: 5px;
+  }
+  100% {
+    transform: translateY(0);
+    padding-top: 0;
+  }
+}
+@-moz-keyframes feedback-in {
+  0%   {
+    transform: translateY(-100px);
+  }
+  80% {
+    transform: translateY(0);
+    padding-top: 5px;
+  }
+  100% {
+    transform: translateY(0);
+    padding-top: 0;
+  }
+}
+@keyframes feedback-in {
+  0%   {
+    transform: translateY(-100px);
+  }
+  80% {
+    transform: translateY(0);
+    padding-top: 5px;
+  }
+  100% {
+    transform: translateY(0);
+    padding-top: 0;
+  }
+}
+
+/* out*/
+
+@-webkit-keyframes feedback-out {
+  0%   {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(0px);
+    padding-top: 5px;
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+@-moz-keyframes feedback-out {
+  0%   {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(0px);
+    padding-top: 5px;
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+@keyframes feedback-out {
+  0%   {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(0px);
+    padding-top: 5px;
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
 
 
 
@@ -306,5 +457,4 @@ nav a.selected, nav a:hover {
 
 
 
-
-
+*/
