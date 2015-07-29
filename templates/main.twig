@@ -45,10 +45,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </a>
       <nav>
         <ul>
-          <li><a href={{ baseUrl() }} {% if currentUrl() == 'http://www.floriecoggins.com/phpsite/' %} class="selected"{% endif %}>Projects</a></li>
-          <li><a href = {{ siteUrl('/photos') }} {% if currentUrl() == 'http://www.floriecoggins.com/phpsite/photos' %} class="selected"{% endif %}>Photos</a></li>
-          <li><a href = {{ siteUrl('/about') }} {% if currentUrl() == 'http://www.floriecoggins.com/phpsite/about' %} class="selected" {% endif %}>About</a></li>
-          <li><a href = {{ siteUrl('/contact') }} {% if currentUrl() == 'http://www.floriecoggins.com/phpsite/contact' %} class="selected"{% endif %}>Contact</a></li>
+          <li><a href={{ baseUrl() }} {% block p_selected %}{% endblock p_selected%}>Projects</a></li>
+          <li><a href = {{ siteUrl('/photos') }} {% block photos_selected %}{% endblock photos_selected%}>Photos</a></li>
+          <li><a href = {{ siteUrl('/about') }} {% block about_selected %}{% endblock about_selected%}>About</a></li>
+          <li><a href = {{ siteUrl('/contact') }} {% block contact_selected %}{% endblock contact_selected%}>Contact</a></li>
           <li><a href = "http://floriecoggins.pythonanywhere.com/">Blog</a></li>
         </ul>
       </nav>
