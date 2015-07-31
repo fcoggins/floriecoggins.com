@@ -19,6 +19,7 @@ GENERAL
 
 body {
   font-family: 'Jacques Francois', serif;
+  background-image: url(../img/symphony.png);
 }
 
 #wrapper {
@@ -38,6 +39,14 @@ img {
 h3 {
   font-family: 'Quicksand', sans-serif;
   font-size: 1.33rem;
+  margin: 0 0 1em 0;
+}
+
+h5 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: normal;
   margin: 0 0 1em 0;
 }
 
@@ -199,9 +208,19 @@ PAGE: PORTFOLIO
   float: left;
   width: 45%;
   margin: 2.2%;
-  background-color: #add5f7;
+  background-color: #fff;
+  border-radius: 5px;
   color: #bdc3c7;
-  border: 1px solid #7fb2f0;
+  -webkit-box-shadow: 4px 4px 3px 0px rgba(153,153,153,0.42);
+  -moz-box-shadow: 4px 4px 3px 0px rgba(153,153,153,0.42);
+  box-shadow: 4px 4px 3px 0px rgba(153,153,153,0.42);
+}
+
+#gallery img {
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  margin: 8px 4px 0;
+  max-width: 96%;
 }
 
 #gallery li a p {
