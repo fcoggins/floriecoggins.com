@@ -491,9 +491,29 @@ ANIMATION
   }
 }
 
+/**********************************
+Photo Lightshow
+***********************************/
 
+#overlay {
+  background: rgba(0,0,0,.7);
+  width: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  display: none;
+  text-align: center;
+  height: 125%;
+}
 
+#overlay img {
+  margin-top: 5%;
+  max-width: 70%;
+}
 
+#overlay p {
+  color: white;
+}
 
 
 

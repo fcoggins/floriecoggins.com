@@ -7,30 +7,30 @@
       <section>
         <ul id="gallery">
           <li>
-            <a href="img/bird.jpg">
-              <img src="img/bird.jpg" alt="">
+            <a href="img/bird.jpg" id="bird">
+              <img src="img/bird.jpg" alt="Blue Heron on a foggy morning">
               <p>Blue Heron on a foggy morning</p>
             </a>
           </li>
           <li>
             <a href="img/glowing_tree.jpg">
-              <img src="img/glowing_tree.jpg" alt="">
+              <img src="img/glowing_tree.jpg" alt="Cottonwood in Paria Canyon">
               <p>Cottonwood in Paria Canyon</p>
             </a>
           </li>
           <li>
             <a href="img/rain.jpg">
-              <img src="img/rain.jpg" alt="">
+              <img src="img/rain.jpg" alt="Rainy Morning">
               <p>Rainy Morning</p>
             </a>
           </li>
-          <!--<li>
-            <a href="img/townefitness.png">
-              <img src="img/townefitness.png" alt="">
-              <p>Towne Fitness Club</p>
-            </a>
-          </li>-->
+      
         </ul>
       </section>
 
 {% endblock content %}
+
+{% block scripts%}
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+{% endblock scripts %}
