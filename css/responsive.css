@@ -2,7 +2,7 @@
 
   nav a {
   font-weight: 800;
-  padding: 15px 10px;
+  font-size: 1.1rem;
   }
 
   /**********************************
@@ -47,34 +47,28 @@
   HEADER
   ***********************************/
   
-  nav {
-    background: none;
-    float: right;
-    font-size: 1.125em;
-    margin-right: 5%;
-    text-align: right;
-    width: 50%;
+  nav a {
+    font-size: 1.6em;
   }
-  
-  #logo {
-    float: left;
-    margin-left: 5%;
-    text-align: left;
-    width: 40%;
+
+  header img {
+    width: 53px;
+    margin-right: 10px;
   }
+
   
   h1 {
-    font-size: 2.5em;
+    font-size: 4.7em;
   }
   
   h2 {
-    font-size: 0.825em;
+    font-size: 1.5em;
     margin-bottom: 20px;
   }
   
   header {
-    border-bottom: 5px solid #3547bc;
     margin-bottom: 60px;
+    padding: 10% 0;
   }    
 }
 

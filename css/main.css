@@ -99,8 +99,13 @@ HEADING
 header {
   float: left;
   margin: 0 0 30px 0;
-  padding: 5px 0 0 0;
+  padding: 6% 0;
   width: 100%;
+}
+
+header img {
+  width: 40px;
+  margin-right: 10px;
 }
 
 #logo {
@@ -111,15 +116,22 @@ header {
 h1 {
   font-family: 'Quicksand', sans-serif;
   margin: 15px 0;
-  font-size: 2.5em;
+  font-size: 3.5em;
   font-weight: normal;
-  line-height: 0.8em;
+  line-height: 1.0em;
+  webkit-animation: .5s .25s fade backwards ease-out;
+  animation: .5s .25s fade backwards ease-out;
 }
 
 h2 {
-  font-size: 0.75em;
+  font-size: 1.2em;
+  letter-spacing: 0.3em;
+  word-spacing: 0.5em;
   font-weight: normal;
-  margin: -5px 0 0;
+  margin: 1.3em 0;
+  color: #808080;
+  -webkit-animation: .5s .5s fade backwards ease-out;
+  animation: .5s .5s fade backwards ease-out;
 }
 
 
@@ -131,8 +143,9 @@ NAVIGATION
 
 nav {
   text-align: center;
-  padding: 10px 0;
-  margin: 20px 0 0;
+  padding: 12px 0;
+  margin: 0 0;
+  font-size: 0.9rem;
 }
 
 nav ul {
@@ -274,7 +287,7 @@ nav {
 }
 
 /* logo text */
-h1, h2 {
+h1 {
   color: #fff;
 }
 
@@ -440,6 +453,22 @@ ANIMATION
   }
   100% {
     transform: translateY(-100px);
+  }
+}
+
+/* Logo*/
+
+@-webkit-keyframes fade{
+  from {
+    transform: translateY(.25em);
+    opacity: 0;
+  }
+}
+
+@keyframes fade{
+  from {
+    transform: translateY(.25em);
+    opacity: 0;
   }
 }
 

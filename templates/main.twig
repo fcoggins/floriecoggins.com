@@ -38,12 +38,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
   {% endif %}
 
-    <header>
-      <a href={{ baseUrl() }} id="logo">
-        <h1>Florie Coggins</h1>
-        <h2>Full Stack Developer</h2>
-      </a>
-      <nav>
+    <nav>
         <ul>
           <li><a href={{ baseUrl() }} {% block p_selected %}{% endblock p_selected%}>Projects</a></li>
           <li><a href = {{ siteUrl('/photos') }} {% block photos_selected %}{% endblock photos_selected%}>Photos</a></li>
@@ -52,6 +47,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <li><a href = "http://floriecoggins.pythonanywhere.com/">Blog</a></li>
         </ul>
       </nav>
+
+    <header>    
+      <a href={{ baseUrl() }} id="logo">
+        <h1><img src = "img/logo.gif">Florie Coggins</h1>
+        <h2>FRONT-END DEVELOPER</h2>
+      </a>
     </header>
     <div id="wrapper">
 
